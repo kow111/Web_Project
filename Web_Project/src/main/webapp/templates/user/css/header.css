@@ -1,0 +1,28 @@
+.notification-container {
+    position: relative;
+}
+
+#notificationBtn {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.notification-popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+#notificationPopup {
+    max-height: 88vh; /* Điều chỉnh chiều cao tối đa bạn muốn hiển thị */
+    overflow-y: auto; /* Cho phép cuộn nếu nội dung vượt quá chiều cao tối đa */
+    border: 1px solid #ccc; /* Thêm đường viền để phân biệt */
+    padding: 10px; /* Thêm padding để tạo khoảng trắng xung quanh nội dung */
+}
