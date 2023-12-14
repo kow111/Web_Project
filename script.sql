@@ -2,12 +2,8 @@
 GO
 /****** Object:  Database [SocialNetwork]    Script Date: 12/14/2023 11:38:08 AM ******/
 CREATE DATABASE [SocialNetwork]
-
-IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
-begin
-EXEC [SocialNetwork].[dbo].[sp_fulltext_database] @action = 'enable'
-end
 GO
+	 
 ALTER DATABASE [SocialNetwork] SET ANSI_NULL_DEFAULT OFF 
 GO
 ALTER DATABASE [SocialNetwork] SET ANSI_NULLS OFF 
