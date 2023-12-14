@@ -2,15 +2,7 @@
 GO
 /****** Object:  Database [SocialNetwork]    Script Date: 12/14/2023 11:38:08 AM ******/
 CREATE DATABASE [SocialNetwork]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'SocialNetwork', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\DATA\SocialNetwork.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
- LOG ON 
-( NAME = N'SocialNetwork_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\DATA\SocialNetwork_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
- WITH CATALOG_COLLATION = DATABASE_DEFAULT, LEDGER = OFF
-GO
-ALTER DATABASE [SocialNetwork] SET COMPATIBILITY_LEVEL = 160
-GO
+
 IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
 begin
 EXEC [SocialNetwork].[dbo].[sp_fulltext_database] @action = 'enable'
